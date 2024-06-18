@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events in js</title>
+</head>
+<body>
+    <!-- events
+     onclick =function works on single click
+     ondblclick = on double click
+     onmouseover = on hover
+     onmouseout = on removing hover
+     onkeyup = on key entered
+     onkeydown = on key pressed
+     onchange = on changing values
+
+     -->
+<button onclick="showname()">Show Name</button>
+<h1 id="name"></h1>
+<button onclick="showaddress()">Show Address</button> <br><br>
+<button onclick="showschoolname()">Show School Name</button><br><br>
+<button onclick="showhobby()">Show Hobby</button><br><br>
+<button onclick="sum()">Show sum</button>
+
+
+<p id="x"></p>
+<p id="a"></p>
+<p id="b"></p>
+<h2 id="c"></h2>
+    <script>
+        function sum(){
+            let c=69
+            let d=63
+            sum=c+d
+            document.getElementById('c').innerHTML=`sum is ${sum}`
+        }
+function showhobby(){
+    let b="hobby"
+    document.getElementById('b').innerHTML="Music"
+}
+function showschoolname(){
+    let a= "school"
+    document.getElementById('a').innerHTML="United School"
+}
+        function showaddress(){
+            let x = "address"
+            document.getElementById('x').innerHTML="Gwarko"
+           
+        }
+
+function showname(){
+    // alert("hello, my name is jenisha")
+// document.write("hello my name is maharjan")
+let name ="jenisha"
+// document.write(x)
+document.getElementById('name').innerHTML="ram"
+
+
+}
+</script>
+
+</body>
+</html>
