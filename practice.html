@@ -1,42 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>practice in js</title>
+    <title>practice</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
-        *{
+        * {
             margin: 0;
             box-sizing: border-box;
         }
-        .container{
-            width: 200px;
-            height: 200px;
-        margin: auto;
-        padding: 15px;
-  
+
+        .mainbox {
+            width: 100%;
+            height: 100vh;
+            background: rgb(255, 254, 254);
         }
-        .container img{
-            width: 200px;
+
+        .mainbox .container .box {
+            width: 100%;
             height: 200px;
+            /* background: #000; */
+            display: flex;
+            /* padding: 50px; */
+            justify-content: space-evenly;
+            align-items: center;
+
         }
-      .btn{
-        display: flex;
-        justify-content: space-between;
-      }
+
+        .mainbox .container .box .p {
+            width: 500px;
+            height: 150px;
+            /* background: #c8b3b3; */
+            /* margin-right: 50px;
+            margin-left: 16px; */
+            align-items: center;
+
+        }
+
+        .mainbox .container .box .h {
+            width: 500px;
+            height: 150px;
+            /* background: #af8282; */
+            /* margin-left: 30px; */
+        }
+
+        .mainbox .container .box .h h3 {
+            color: rgb(70, 95, 65);
+        }
+
+        .mainbox .container .box .h h2 {
+            font-size: 40px;
+        }
+
+        .mainbox .container .box1 {
+            width: 100%;
+            height: 500px;
+            /* background: #ae9393; */
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .mainbox .container .box1 .form {
+            width: 500px;
+            height: 400px;
+            /* background: #e1dfdf; */
+        }
+
+        .mainbox .container .box1 .form input {
+            width: 500px;
+            height: 50px;
+            background: rgb(234, 229, 229);
+            border: none;
+        }
+
+        .mainbox .container .box1 .form button {
+            width: 500px;
+            height: 30px;
+            background: rgba(30, 171, 30, 0.5);
+            border-radius: 50px;
+            border: none;
+            color: white;
+        }
+
+        .mainbox .container .box1 .address {
+            width: 500px;
+            height: 400px;
+            background: #b25252;
+        }
+
+        .mainbox .container .box1 .address i {
+            font-size: 40px
+        }
     </style>
 </head>
-<body>
-    
-    <div class="container">
-        <img src="https://th.bing.com/th/id/OIP.4cmK9d36bF0F7-V-SaVPnAHaG_?rs=1&pid=ImgDetMain" alt="">
-        <h2 title="My name is Jenisha Maharjan">My name is je..</h2>
 
-        <div class="btn">
-        <button>Button</button>
-        <button>Button</button>
+<body>
+
+    <div class="mainbox">
+        <div class="container">
+            <div class="box">
+                <div class="p">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus omnis eveniet corrupti est
+                        ab iustoo exercitationem incidunt corporis doloremque. </p>
+                </div>
+                <div class="h">
+                    <h3>Get Touch in</h3>
+                    <h2>Contact Us</h2>
+                </div>
+
+
+
+            </div>
+            <div class="box1">
+                <div class="form">
+
+                    <label for=""></label>
+                    <input type="text" name="" id="" placeholder="Name">
+                    <hr><br>
+
+                    <label for=""></label>
+                    <input type="email" name="" id="" placeholder="Email">
+                    <hr><br>
+
+                    <label for=""></label>
+                    <input type="number" name="" id="" placeholder="Phone">
+                    <hr><br>
+
+                    <label for=""></label>
+                    <input type="text" name="" id="" placeholder="Message">
+                    <hr><br>
+
+                    <button>Send</button>
+                </div>
+                <div class="address">
+                    <div class="home">
+                        <i class='bx bxs-home'></i>
+                        <div class="h4">
+                            <h4>Address</h4>
+                            <p>Nepal</p>
+                        </div>
+                    </div>
+
+
+                    <div class="phone">
+                        <i class='bx bxs-phone'></i>
+                        <h4>Phone</h4>
+                        <p>23761</p>
+                    </div>
+
+                    <div class="email">
+                        <i class='bx bxs-envelope'></i>
+                        <h4>Email</h4>
+                        <p>info@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
     </div>
-   
+
 </body>
+
 </html>
